@@ -1,2 +1,24 @@
 ---
 # tasks file for monsieurbiz.ssl
+
+- name: Create certificates directories
+  file: group={{item.directory.group}} owner={{item.directory.owner}} state=directory recurse={{item.directory.recurse}} path={{item.directory.path}}
+  no_log: yes
+  become: yes
+  become_user: root
+  with_items: '{{ monsieurbiz_ssl_certificates }}'
+  tags: monsieurbiz_ssl_tags
+
+- name: Copy certificates
+  no_log: yes
+  become: yes
+  become_user: root
+  copy:
+    content: "{{ item.1.content }}"
+    dest: "{{ item.0.directory.path }}{{item.1.filename}}"
+    group: "{{ item.0.directory.group }}"
+    owner: "{{ item.0.directory.owner }}"
+  with_subelements:
+    - '{{ monsieurbiz_ssl_certificates }}'
+    - certificates
+  tags: monsieurbiz_ssl_tags

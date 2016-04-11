@@ -1,2 +1,5 @@
 ---
 # defaults file for monsieurbiz.ssl
+
+monsieurbiz_ssl_tags: [monsieurbiz, ssl]
+monsieurbiz_ssl_certificates: []
