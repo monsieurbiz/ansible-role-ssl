@@ -2,4 +2,87 @@
 # defaults file for monsieurbiz.ssl
 
 monsieurbiz_ssl_tags: [monsieurbiz, ssl]
+
 monsieurbiz_ssl_certificates: []
+# Example
+#  - name: example.org
+#    directory:
+#      path: /root/ssl/example.org/
+#      owner: root
+#      group: root
+#      recurse: yes
+#    certificates:
+#      - filename: example.org.key
+#        content: |
+#          -----BEGIN RSA PRIVATE KEY-----
+#          MIIEpAIBAAKCAQEAzzVOfr7IefaFiaH7FCmSVMYZbKq8/x85/+nzXdX2nYcTOPt5
+#          eOCPsZUiKfwrg/pwbUuTk3yQmFjtCATeHQPg05b2tgWcRw7ibX7ACYCPCbRODQi0
+#          hlapOzRYUjc47d88UjHl2vFYshtGktldQcXr8R58wU/8rEtHEG+zfGpQXt1c8xp5
+#          jsTmJjgli63/hWD9ZOp9YtPyD1bqY+yt2q2iBmm/NrLBaKHBeZhp+0EfQKmFjyXe
+#          2o50B3l1mH9CLJpmO7+V33Hhli7SFLSc2hkhcmJaUOktuIpRnlA8AH7YAx1qrbSg
+#          Mk0u9nLB0cuqTmRBXSPYy1xw9SS3RNWuoKLjFwIDAQABAoIBAQDBNU51BoY+myzX
+#          Mg/BNCY7H+CTH/1M0hwt0ULZC2qCZnH5HxucJ6A1EP8jMPyOepYcg20fB/Z35+tV
+#          H9zQJ06bXVe8UCzxYSKmwJpmAdbeUJ66rpRN8z6nct6sAsv1mcNQTTCr34E5yg8b
+#          XM0FSH0BftELG/9Z1HN2EwHEkAlS+d0T4Z/QByPgdpvuo0YwJYQtYCPbqEf2xO5d
+#          1Udk+nDPEVCYHrkMKrsQxfcmuBzWV7W4GbPhTM8oAYuwRgqCo1BOvqk/9L1LIWnz
+#          BeByYdrig9Gx1+YzfrB3uknynnlzeP5uCVnKOxcuphBaAni2EiQUKH5LgxO+w+iV
+#          WDibj76ZAoGBAPlbFjBnysqFAs8SiFtseUHK3i1pE28wwHl+y4mEasfEtUcmw6qP
+#          l+rADmlIyry8pztNcjXfHXNkbPMM89Xit/gRDYWY829jAgWDZp11KRvVCb2n8urv
+#          Zj3TE9aot+csFVrtgAgbhZygK7/sykiTLO1rio6lvXWCAB/36IhYP+MdAoGBANS6
+#          uLvyeCQ4JPxMhKuca0teTuqEcLQjjSHHMuhUSvsG5Epgdliti/WrJQ0DyXaieIS2
+#          yxlUQBU3F/CALz50nY0YfUEMTSIws0xhHMjjFjbNlzLA2+s1RQ4doGtfH44t87tI
+#          el7oXQRF00EvalPVVi1DZkveY8/4aY+mXx4ugzTDAoGAKZJD+sHzDxxpwXgHf6Zv
+#          +MYHkG6KLOllzVuUN1L6Ml/bEQena1IRM7PdMzRNiHWzM7HPrqeJ02kUuNiZ9jic
+#          DyFYrcM4IoPRHHYxr2KO/fLgctwDJaPP2dLM5eau8j1pOgWKaM+d0OTrJk4l0z+m
+#          J9bb/LgpA+QufSXpgIGl9QkCgYEAzhJrbjX+SCfTPEzroEqQbZxYGjpd60MdLoGH
+#          QSSW1gHhGGPFgTXtBPjblXX7rV7KHNXufQTuZx7No/6oxXm2Pb5hZ6gA+IPwzKau
+#          ebPyCvix5UqKP5mE4Z21jw3AxbyiBOS7FkFGCiOR9+10tO1O494MtKYkToy3xZ5H
+#          OjeYhn0CgYBrazxNpS0b/kfVBiPuOBCKxGtdf6paYCZ4g3nAQ7aGXB7cassgW+8D
+#          SneuI6OkdArjrP80Zx3zUL9nN4w8WP9O3Tzdkufpi/tyfXJNEA4BfptCLyP3IXUW
+#          4cvaIBTgIQHhqrXqnfCzqzRnD6jQSYigqVab+eLFY+pbgY8O4D8l2g==
+#          -----END RSA PRIVATE KEY-----
+#      - filename: example.org.crt
+#        content: |
+#          -----BEGIN CERTIFICATE-----
+#          MIIDTzCCAjegAwIBAgIJAJksu72FhW9EMA0GCSqGSIb3DQEBCwUAMCMxCzAJBgNV
+#          BAYTAkZSMRQwEgYDVQQDEwtleGFtcGxlLm9yZzAeFw0xNjA0MTEyMjI5MThaFw0y
+#          NjA0MDkyMjI5MThaMCMxCzAJBgNVBAYTAkZSMRQwEgYDVQQDEwtleGFtcGxlLm9y
+#          ZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM81Tn6+yHn2hYmh+xQp
+#          klTGGWyqvP8fOf/p813V9p2HEzj7eXjgj7GVIin8K4P6cG1Lk5N8kJhY7QgE3h0D
+#          4NOW9rYFnEcO4m1+wAmAjwm0Tg0ItIZWqTs0WFI3OO3fPFIx5drxWLIbRpLZXUHF
+#          6/EefMFP/KxLRxBvs3xqUF7dXPMaeY7E5iY4JYut/4Vg/WTqfWLT8g9W6mPsrdqt
+#          ogZpvzaywWihwXmYaftBH0CphY8l3tqOdAd5dZh/QiyaZju/ld9x4ZYu0hS0nNoZ
+#          IXJiWlDpLbiKUZ5QPAB+2AMdaq20oDJNLvZywdHLqk5kQV0j2MtccPUkt0TVrqCi
+#          4xcCAwEAAaOBhTCBgjAdBgNVHQ4EFgQUIHwaTvv1yaXEV2E4/fNULtXbj+EwUwYD
+#          VR0jBEwwSoAUIHwaTvv1yaXEV2E4/fNULtXbj+GhJ6QlMCMxCzAJBgNVBAYTAkZS
+#          MRQwEgYDVQQDEwtleGFtcGxlLm9yZ4IJAJksu72FhW9EMAwGA1UdEwQFMAMBAf8w
+#          DQYJKoZIhvcNAQELBQADggEBADrTPxuPZ5WfIfvvSBfQyqsWe/CXZoG3et5czDZ0
+#          8OeguMwvwhuSccvHMKGxOirpe1JhVKFkMxTChHG68oRkvsjmOLE/KYaYo2a2kNdj
+#          lyCR9yj362LxYbKWJdVR7yoh0vKx79e4zU2bAF5GxY6ttN60Jdn7xTan5qDknFHz
+#          UGE5yvmYHTEbBr8uoVBFBHz1Idt8Jwtl1HxyxIlYZixh1hbMzC2+oP7FzaY3lpPG
+#          cDJpI1zBCIkg4kVbRV65XmSLvpOLWEzQ0RHhLWGlo2ha/h1j3YxbSpv29EDlu0v1
+#          Zvk955O+7HOGg0ciQZ6InY02qzErIZfAhxIvKE0Qibl0+5o=
+#          -----END CERTIFICATE-----
+#      - filename: _.example.org.crt
+#        content: |
+#          -----BEGIN CERTIFICATE-----
+#          MIIDVTCCAj2gAwIBAgIJAIfUlkhkvXi9MA0GCSqGSIb3DQEBCwUAMCUxCzAJBgNV
+#          BAYTAkZSMRYwFAYDVQQDFA0qLmV4YW1wbGUub3JnMB4XDTE2MDQxMTIyMjkxOFoX
+#          DTI2MDQwOTIyMjkxOFowJTELMAkGA1UEBhMCRlIxFjAUBgNVBAMUDSouZXhhbXBs
+#          ZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPNU5+vsh59oWJ
+#          ofsUKZJUxhlsqrz/Hzn/6fNd1fadhxM4+3l44I+xlSIp/CuD+nBtS5OTfJCYWO0I
+#          BN4dA+DTlva2BZxHDuJtfsAJgI8JtE4NCLSGVqk7NFhSNzjt3zxSMeXa8ViyG0aS
+#          2V1BxevxHnzBT/ysS0cQb7N8alBe3VzzGnmOxOYmOCWLrf+FYP1k6n1i0/IPVupj
+#          7K3araIGab82ssFoocF5mGn7QR9AqYWPJd7ajnQHeXWYf0IsmmY7v5XfceGWLtIU
+#          tJzaGSFyYlpQ6S24ilGeUDwAftgDHWqttKAyTS72csHRy6pOZEFdI9jLXHD1JLdE
+#          1a6gouMXAgMBAAGjgYcwgYQwHQYDVR0OBBYEFCB8Gk779cmlxFdhOP3zVC7V24/h
+#          MFUGA1UdIwROMEyAFCB8Gk779cmlxFdhOP3zVC7V24/hoSmkJzAlMQswCQYDVQQG
+#          EwJGUjEWMBQGA1UEAxQNKi5leGFtcGxlLm9yZ4IJAIfUlkhkvXi9MAwGA1UdEwQF
+#          MAMBAf8wDQYJKoZIhvcNAQELBQADggEBAFgY7wssIaTHeZ1YJKnWbcKJnqtS7IwZ
+#          YSqnD3XNercr6h/Nk2iPrvPyHinN9HSQC0xML22Vaahp4zGEOzZ7finREuEayMt/
+#          8uq844fwqEWDT/NRI7WxPOSb05xlqEOdjsUJBmhy1vBKBAYlGwaAhu8WGKY6SDTr
+#          QLV0ct/ONC5kh+YEo+BiSDv4S9Cbz5GFvkeMVmp26ZOdUmUxwpVWcldhxLP6GV+D
+#          rA11U1e+08O8PtL4MONR+zqIu+4z8Iza1GnIGwtY5W4Qy0mcMQ4gu2Bw4gp+TVbP
+#          zWF31Dvsj1qnXh3kx+xYd20ROWk/VzDs6zfDuZVaCEkkDLPpvgnH6J0=
+#          -----END CERTIFICATE-----
+
