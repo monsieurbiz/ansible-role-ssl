@@ -18,6 +18,7 @@
     dest: "{{ item.0.directory.path }}{{item.1.filename}}"
     group: "{{ item.0.directory.group }}"
     owner: "{{ item.0.directory.owner }}"
+    mode: 0640
   with_subelements:
     - '{{ monsieurbiz_ssl_certificates }}'
     - certificates
